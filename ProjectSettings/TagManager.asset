@@ -47,3 +47,12 @@ TagManager:
   - name: Button
     uniqueID: 2418111435
     locked: 0
+  - name: Bullet
+    uniqueID: 2151488105
+    locked: 0
+  - name: Enemies
+    uniqueID: 1049453959
+    locked: 0
+  - name: Player
+    uniqueID: 605709631
+    locked: 0

@@ -55,10 +55,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\HealthScript.cs" />
      <Compile Include="Assets\scripts\Move.cs" />
+     <Compile Include="Assets\scripts\MoveScript.cs" />
      <Compile Include="Assets\scripts\Poop.cs" />
      <Compile Include="Assets\scripts\Scenes.cs" />
      <Compile Include="Assets\scripts\ScrollingBackground.cs" />
+     <Compile Include="Assets\scripts\ShotScript.cs" />
  <Reference Include="UnityEngine">
  <HintPath>F:/Program Files/Unity/Hub/Editor/2019.4.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
