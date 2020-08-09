@@ -4,15 +4,34 @@ using UnityEngine;
 
 public class HealthScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    //всего хитпоитов
+    public int hp = 1;
+    //враг или игрок?
+    public bool isEnemy = true;
+    //наносим урон и проверяем должен ли объект быть уничтоженым
+    public void Damage (int damageCount)
     {
-        
+        hp -= damageCount;
+
+        if (hp <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D otherCollider)
     {
-        
+        //это выстрел?
+        ShotScript shot = otherCollider.gameObject.GetComponent<ShotScript>();
+        if (shot != null)
+        {
+            //избегайте дружественного огня
+            if (shot.isEnemyShot != isEnemy)
+            {
+                Damage(shot.damage);
+                //уничтожить выстрел
+                Destroy(shot.gameObject);
+            }
+        }
     }
 }

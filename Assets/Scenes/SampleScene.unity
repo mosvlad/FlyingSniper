@@ -711,12 +711,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953434420}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3351ae1fc5c14fa41b507157322e314b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2.5
+--- !u!114 &953434426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953434420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b74a8dad511afd41a6029afac149796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 5214049453459521006, guid: f99da66cb87e94f498913c595f071b29,
+    type: 3}
+  shootingRate: 0.25
+  shootCooldown: 0
 --- !u!1 &1118515608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,6 +1544,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Keka
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214049453459521004, guid: f99da66cb87e94f498913c595f071b29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5214049453459521006, guid: f99da66cb87e94f498913c595f071b29,
         type: 3}
